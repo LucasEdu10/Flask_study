@@ -2,6 +2,6 @@
 
 Bibliotecas usadas:
 
-Flask Alchemy
-Flask Migrate
-Flask Script
+Flask Alchemy,
+Flask Migrate,
+Flask Script.
