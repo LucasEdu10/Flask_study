@@ -1,0 +1,15 @@
+virtualenv -p python3 (nome_do_env) #comando para criar e instalar o python3 nele
+. (nome_do_env)/bin/activate #comando para ativar o virtualENV
+
+
+flaskenv/bin/pip3 freeze #Listar as bibliotecas instaladas no virtualenv
+flaskenv/bin/pip3 freeze > requirements #cria um arquivo com toas as bibliotecas instaladas
+
+
+python3 run.py runserver #Para rodar aplicação agora vai ficar assim
+
+python3 run.py db init #Cria pasta de migrações, onde as migrações irão ser salvas
+
+python3 run.py db migrate #compara com o banco atual e roda as diferenças
+
+python3 run.py db upgrade #aplica as novas alterações das tabelas no banco
